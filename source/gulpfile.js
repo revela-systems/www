@@ -23,14 +23,14 @@ const path = {
   srcIMG: 'site/images/**/*.+(png|jpg|jpeg|gif|svg)',
 
   srcCSS: 'site/css', // CSS is built on-the-fly from sass
-  dist: '../docs',
-  distIMG: '../docs/images',
+  dist: '../dist',
+  distIMG: '../dist/images',
 
   cleanDist: [
-    '../docs/**/*',
-    '!../docs/CNAME',
-    '!../docs/images',
-    '!../docs/images/**/*'
+    '../dist/**/*',
+    '!../dist/CNAME',
+    '!../dist/images',
+    '!../dist/images/**/*'
   ]
 };
 
