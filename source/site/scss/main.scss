@@ -1,0 +1,31 @@
+body {
+  background-image: url(/images/jan-vanveen-1131039-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  overflow: hidden;
+}
+
+*::selection {
+  background-color: mediumturquoise;
+}
+
+main { 
+  color: seashell;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  header {
+    font-size: 3em;
+    font-weight: 600;    
+  }
+
+  #construction {
+    display: flex;
+    position: relative;
+  }
+}

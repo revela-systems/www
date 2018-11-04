@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "node"
+cache:
+  directories:
+    - source/node_modules
+before_script:
+  - cd source
+  - npm install
+script:
+  - ../scripts/staging-build.sh
+branches:
+  only:
+    staging
