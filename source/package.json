@@ -4,6 +4,9 @@
   "description": "Website for revela.io",
   "main": "index.js",
   "scripts": {
+    "build": "npx gulp build",
+    "run": "npx gulp",
+    "dev": "npx gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
