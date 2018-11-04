@@ -11,11 +11,6 @@ before_script:
   - npm install --global gulp-cli
 script:
   - ../scripts/staging-build.sh
-deploy:
-  provider: script
-  skip_cleanup: true
-  script:
-    - ../scripts/staging-deploy.sh
 branches:
   only:
     staging
