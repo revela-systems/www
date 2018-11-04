@@ -24,8 +24,14 @@ const path = {
 
   srcCSS: 'site/css', // CSS is built on-the-fly from sass
   dist: '../docs',
-  distIMG: '../docs/images'
+  distIMG: '../docs/images',
 
+  cleanDist: [
+    '../docs/**/*',
+    '!../docs/CNAME',
+    '!../docs/images',
+    '!../docs/images/**/*'
+  ]
 };
 
 
@@ -41,16 +47,20 @@ gulp.task('browser-sync', () => {
   });
 });
 
-gulp.task('scss', function() {
+const scss = () => {
   return gulp.src(path.srcSCSS)
     .pipe(sass())
-    .pipe(gulp.dest(path.srcCSS))
-    .pipe(browserSync.reload({ stream: true }));
+    .pipe(gulp.dest(path.srcCSS));
+};
+
+gulp.task('scss', scss);
+gulp.task('scss:reload', () => {
+  return scss().pipe(browserSync.reload({ stream: true }));
 });
 
 // Watchers
 gulp.task('watch', () => {
-  gulp.watch(path.srcSCSS, gulp.series('scss'));
+  gulp.watch(path.srcSCSS, gulp.series('scss:reload'));
   gulp.watch(path.srcHTML, browserSync.reload);
   gulp.watch(path.srcJS, browserSync.reload);
 });
@@ -80,13 +90,15 @@ gulp.task('images', () =>  {
 
 // Cleaning 
 gulp.task('clean', () =>  {
-  return del(path.dist).then(cb => {
+  // Force del to remove the 
+  return del(path.srcCSS).then(cb => {
     return cache.clearAll(cb);
   });
 });
 
 gulp.task('clean:dist', () =>  {
-  return del(['dist/**/*', '!dist/images', '!dist/images/**/*']);
+  const force = true;
+  return del(path.cleanDist, { force });
 });
 
 // Build Sequences
@@ -94,4 +106,4 @@ gulp.task('clean:dist', () =>  {
 
 gulp.task('default', gulp.parallel('browser-sync', 'watch'));
 
-gulp.task('build', gulp.series('clean:dist', gulp.parallel('useref', 'images')));
+gulp.task('build', gulp.series('clean:dist', 'scss', gulp.parallel('useref', 'images')));
