@@ -1,23 +1,68 @@
 body {
-  background-image: url(/images/jan-vanveen-1131039-unsplash.jpg);
+  background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
-  overflow: hidden;
+  margin: 0;
 }
 
 *::selection {
   background-color: mediumturquoise;
 }
 
-main { 
-  color: seashell;
+.navbar {
+  overflow: auto;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  height: 100vh;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.revelalogo {
+  float: left;
+  display: block;
+  line-height: 55px;
+  height: 55px;
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+main {
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+
+  .title {
+    background-image: url(/images/jan-vanveen-1131039-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    width: 100%;
+    padding:40px 40px;
+    margin: 100px;
+    text-align: center;
+    color: white;
+  }
 
   header {
     font-size: 3em;
@@ -25,7 +70,18 @@ main {
   }
 
   #construction {
-    display: flex;
+    display: absolute;
     position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .nextsection {
+    background-color: #E2E2E3;
+    width: 100%;
+    text-align: center;
+    color: black;
   }
 }
+
+
