@@ -17,4 +17,4 @@ This repository tracks the sources for the [revela.io](https://www.revela.io) we
 * Follow the above to launch a local server then make changes to your local copy
 * When you're satisfied, build your changes for github pages: `npm run build`, (equivalently `npx gulp build`). Make sure you run this command from the "source" directory or lower. 
 * Commit then push your work: `git push -u origin dev/<my_changes>`
-* Create a PR against the **staging** branch, and your changes will be put up for review and displayed on [surge.sh](revela.surge.sh)
+* Create a PR against the **staging** branch, and your changes will be put up for review and displayed on [revela.surge.sh](https://revela.surge.sh)
