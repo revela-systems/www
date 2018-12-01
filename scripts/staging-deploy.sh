@@ -1,7 +1,10 @@
 #!/bin/bash
 
-echo "Building sources"
+echo "Installing packages"
 cd source/ 
+npm install
+
+echo "Building sources"
 npm run build
 
 echo "Deploying to staging server with Surge"
