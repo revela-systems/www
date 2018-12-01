@@ -8,3 +8,7 @@ script:
 branches:
   only:
     staging
+
+cache:
+  directories:
+    - source/node_modules
