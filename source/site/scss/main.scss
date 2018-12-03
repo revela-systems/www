@@ -20,15 +20,15 @@ body {
 .navbar a {
   float: right;
   display: block;
-  color: 1A181E;
+  color: 1b1a18;
   text-align: center;
   padding: 18px 16px;
   text-decoration: none;
 }
 
 .navbar a:hover {
-  background-color: 7C786B;
-  color: EFE2E4;
+  background-color: CCC5B9;
+  color: 1b1a18;
 }
 
 .revelalogo {
@@ -40,7 +40,8 @@ body {
   text-align: center;
   text-decoration: none;
   padding-left: 15px;
-  color: 783812;
+  color: BA2D0B;
+  letter-spacing: 1px;
 }
 
 main {
@@ -61,6 +62,8 @@ main {
     margin: 100px;
     text-align: center;
     color: white;
+    letter-spacing: 2px;
+    word-spacing: 10px;
   }
 
   header {
@@ -72,59 +75,125 @@ main {
     display: absolute;
     position: relative;
     text-align: center;
-    color: EFE2E4;
+    font-size: 1.2em;
+    color: f2f2f2;
   }
 
   .separator {
     height: 50px;
   }
 
-  .left {
-    float: left;
-    width: 50%;
-    background-color: CE955B;
-  }
-
-  .right {
-    float: right;
-    width: 50%;
-    background-color: 7C786B;
-  }
-
   .about {
     background-color: white;
+    width: 100%;
+  }
+
+  .about h2 {
+    text-align: left;
+    padding-left: 10%;
+  }
+
+  .about p {
+    text-align: left;
+    padding-left: 20%
+  }
+
+  .aboutleft {
+    float: left;
+    width: 60%;
+    background-color: white;
+    color: 1b1a18;
+  }
+
+  .aboutright {
+    float: right;
+    width: 40%;
+    background-color: 403D39;
+    color: f2f2f2;
+  }
+
+  .aboutbottom {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    color: 1b1a18;
+    margin-top: 20px;
+  }
+
+  .aboutbottom h2 {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .torenimg {
+    background-image: url(/images/image-placeholder_fznwvy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    width: 20%;
+    padding-top: 20%;
+    float: left;
+    margin-left: 10%;
+  }
+  .zevimg {
+    background-image: url(/images/image-placeholder_fznwvy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    width: 20%;
+    padding-top: 20%;
+    float: left;
+    margin-left: 10%;
+  }
+  .autumnimg {
+    background-image: url(/images/image-placeholder_fznwvy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    width: 20%;
+    padding-top: 20%;
+    float: left;
+    margin-left: 10%;
+  }
+
+  .services {
+    background-color: BA2D0B;
     width: 100%;
     text-align: center;
     color: black;
   }
 
   .products {
-    background-color: #CE955B;
+    background-color: BA2D0B;
     width: 100%;
     text-align: center;
     color: black;
   }
 
-  .services {
-    background-color: #7C786B;
+  .investors {
+    background-color: white;
     width: 100%;
     text-align: center;
     color: black;
   }
 
   .contact {
-    background-color: #1A181E;
+    background-color: 1b1a18;
     width: 100%;
-    color: EFE2E4;
+    color: f2f2f2;
   }
 
   .contactleft {
     float: left;
     width: 50%;
+    font-variant: small-caps;
   }
 
   .contactleft p {
-    padding-left: 25%
+    padding-left: 25%;
   }
 
   .contactleft ul {
@@ -139,10 +208,11 @@ main {
   .contactright {
     float: right;
     width: 50%;
+    font-variant: small-caps;
   }
 
   .contactright p {
-    padding-left: 45%
+    padding-left: 45%;
   }
 
   .contactright ul {
@@ -153,4 +223,47 @@ main {
     padding-left: 45%;
     font-size: 14px;
   }
+
+
+  .testcolors {
+    width: 100%;
+    text-align: center;
+  }
+
+  .t1 {
+    width: 20%;
+    height: 50px;
+    float: left;
+    background-color: f2f2f2;
+  }
+
+  .t2 {
+    width: 20%;
+    height: 50px;
+    float: left;
+    background-color: CCC5B9;
+  }
+
+  .t3 {
+    width: 20%;
+    height: 50px;
+    float: left;
+    background-color: BA2D0B;
+  }
+
+  .t4 {
+    width: 20%;
+    height: 50px;
+    float: left;
+    background-color: 403D39;
+  }
+
+
+  .t5 {
+    width: 20%;
+    height: 50px;
+    float: left;
+    background-color: 1b1a18;
+  }
+
 }
