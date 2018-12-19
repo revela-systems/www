@@ -3,32 +3,39 @@ body {
   margin: 0;
 }
 
-*::selection {
-  background-color: mediumturquoise;
-}
-
 .navbar {
-  overflow: auto;
   background-color: white;
+  overflow: auto;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid grey;
 }
 
 .navbar a {
   float: right;
   display: block;
-  color: 1b1a18;
-  text-align: center;
   padding: 18px 16px;
+  text-align: center;
   text-decoration: none;
+  color: 0F0F0F;
 }
 
 .navbar a:hover {
-  background-color: CCC5B9;
-  color: 1b1a18;
+  background-color: EDEDF4;
+  color: 0F0F0F;
+}
+
+.logoimg {
+  float: left;
+  background-image: url(/images/templogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  height: 55px;
+  width: 55px;
 }
 
 .revelalogo {
@@ -39,90 +46,86 @@ body {
   font-size: 2em;
   text-align: center;
   text-decoration: none;
-  padding-left: 15px;
-  color: BA2D0B;
+  padding-left: 5px;
+  color: C24400;
   letter-spacing: 1px;
 }
 
 main {
-  color: black;
+  color: 050517;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .title {
+  .extras {
     background-image: url(/images/jan-vanveen-1131039-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
+  }
+
+  .title {
     width: 100%;
-    padding-top:40px;
-    padding-bottom: 40px;
-    margin: 100px;
     text-align: center;
-    color: white;
     letter-spacing: 2px;
     word-spacing: 10px;
+    background-color: white;
+  }
+
+  .businessphoto {
+    width: 100%;
+    padding: 100px 0px 80px;
+    background-image: url(/images/treesfog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 33%;
   }
 
   header {
-    font-size: 3em;
+    color: C24400;
+    font-size: 5em;
     font-weight: 600;    
   }
 
-  #construction {
+  .description {
     display: absolute;
     position: relative;
     text-align: center;
-    font-size: 1.2em;
-    color: f2f2f2;
-  }
-
-  .separator {
-    height: 50px;
+    font-size: 1.5em;
+    color: 050517;
   }
 
   .about {
-    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-  }
-
-  .about h2 {
-    text-align: left;
-    padding-left: 10%;
-  }
-
-  .about p {
-    text-align: left;
-    padding-left: 20%
+    padding: 30px 0px 30px 0px;
+    text-align: center;
   }
 
   .aboutleft {
     float: left;
-    width: 60%;
-    background-color: white;
-    color: 1b1a18;
+    width: 30%;
+    padding: 20px 20px 20px 20px;
   }
 
   .aboutright {
     float: right;
-    width: 40%;
-    background-color: 403D39;
-    color: f2f2f2;
+    width: 30%;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: 7A9E7E;
   }
 
-  .aboutbottom {
+  .team {
     width: 100%;
-    background-color: white;
     text-align: center;
-    color: 1b1a18;
-    margin-top: 20px;
-  }
-
-  .aboutbottom h2 {
+    padding: 30px 0px 50px 0px;
     text-align: center;
-    padding-left: 0;
   }
 
   .torenimg {
@@ -131,10 +134,11 @@ main {
     background-size: cover;
     background-position-y: center;
     background-position-x: center;
-    width: 20%;
-    padding-top: 20%;
+    border-radius: 5px;
+    width: 15%;
+    padding-top: 15%;
     float: left;
-    margin-left: 10%;
+    margin-left: 13.75%;
   }
   .zevimg {
     background-image: url(/images/image-placeholder_fznwvy.jpg);
@@ -142,10 +146,11 @@ main {
     background-size: cover;
     background-position-y: center;
     background-position-x: center;
-    width: 20%;
-    padding-top: 20%;
+    border-radius: 5px;
+    width: 15%;
+    padding-top: 15%;
     float: left;
-    margin-left: 10%;
+    margin-left: 13.75%;
   }
   .autumnimg {
     background-image: url(/images/image-placeholder_fznwvy.jpg);
@@ -153,37 +158,78 @@ main {
     background-size: cover;
     background-position-y: center;
     background-position-x: center;
-    width: 20%;
-    padding-top: 20%;
+    border-radius: 5px;
+    width: 15%;
+    padding-top: 15%;
     float: left;
-    margin-left: 10%;
+    margin-left: 13.75%;
+  }
+
+  .toren {
+    width: 15%;
+    float: left;
+    margin-left: 13.75%;
+  }
+
+  .zev {
+    width: 15%;
+    float: left;
+    margin-left: 13.75%;
+  }
+
+  .autumn {
+    width: 15%;
+    float: left;
+    margin-left: 13.75%;
   }
 
   .services {
-    background-color: BA2D0B;
-    width: 100%;
+    background-color: EDEDF4;
+    width: 95%;
+    border-radius: 5px;
+    padding: 30px 0px 50px;
     text-align: center;
-    color: black;
   }
 
   .products {
-    background-color: BA2D0B;
     width: 100%;
+    padding: 30px 0px 50px;
     text-align: center;
-    color: black;
   }
 
   .investors {
-    background-color: white;
     width: 100%;
+    padding: 30px 0px 50px;
     text-align: center;
-    color: black;
+  }
+
+  .alacrity {
+    float: left;
+    width: 20%;
+    padding-left: 15%;
+  }
+
+  .owen {
+    float: left;
+    width: 20%;
+    padding-left: 5%;
+    font-size: 20px;
+    color: 282828;
+  }
+
+  .amin {
+    float: left;
+    width: 20%;
+    padding-left: 5%;
+    font-size: 20px;
+    color: 282828;
   }
 
   .contact {
-    background-color: 1b1a18;
+    background-color: 050517;
+    color: white;
     width: 100%;
-    color: f2f2f2;
+    padding: 15px 0px 15px 0px;
   }
 
   .contactleft {
@@ -224,46 +270,12 @@ main {
     font-size: 14px;
   }
 
-
-  .testcolors {
+  .copyright {
     width: 100%;
-    text-align: center;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: 050517;
+    color: white;
+    font-size: 10px;
   }
-
-  .t1 {
-    width: 20%;
-    height: 50px;
-    float: left;
-    background-color: f2f2f2;
-  }
-
-  .t2 {
-    width: 20%;
-    height: 50px;
-    float: left;
-    background-color: CCC5B9;
-  }
-
-  .t3 {
-    width: 20%;
-    height: 50px;
-    float: left;
-    background-color: BA2D0B;
-  }
-
-  .t4 {
-    width: 20%;
-    height: 50px;
-    float: left;
-    background-color: 403D39;
-  }
-
-
-  .t5 {
-    width: 20%;
-    height: 50px;
-    float: left;
-    background-color: 1b1a18;
-  }
-
 }
