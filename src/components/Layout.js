@@ -1,12 +1,19 @@
 import React from 'react';
 import Header from '../components/Header';
-import styled from 'tachyons-components';
+import styled from 'styled-components';
 
-const BodyFrame = styled('div')`
- pv2 mv3
+const BodyFrame = styled.div`
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
 `
-const BigFrame = styled('div')`
-mw8 center pa3
+const BigFrame = styled.div`
+    max-width: 64rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
 `
 
 export default function Layout(props) {

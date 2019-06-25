@@ -8,7 +8,6 @@ export default function About(props) {
     return (
         <Layout location={props.location} title='About'>
             <div 
-                className='f4'
                 dangerouslySetInnerHTML={{__html : markdownRemark.html }} 
             />
         </Layout>

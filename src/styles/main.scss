@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Biryani:900&display=swap');
+
+body {
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  margin: 0;
+}
+
+*::selection {
+  background-color: mediumturquoise;
+}
+
+
+svg {
+  fill: rgb(0, 171, 227);
+  
+  circle {
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    &.cx10 { animation-delay:  00ms };
+    &.cx20 { animation-delay: 100ms };
+    &.cx30 { animation-delay: 200ms };
+    &.cx40 { animation-delay: 300ms };
+    &.cx50 { animation-delay: 400ms };
+    &.cx60 { animation-delay: 500ms };
+    &.cx70 { animation-delay: 600ms };
+    &.cx80 { animation-delay: 700ms };
+    &.cx90 { animation-delay: 800ms };
+  }
+
+  .seperator {
+    fill: rgb(14, 2, 70);
+    animation: bar 1.5s ease-out forwards;
+  }
+
+  .bars {
+    fill: url(#out-gradient);
+    animation-delay: 1.7s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-name: expand;
+    opacity: 0;
+
+    &1 { --out-width: 90px }
+    &2 { --out-width: 83px }
+    &3 { --out-width: 76px }
+  }
+
+  text {
+    font-family: 'Biryani';
+    font-size: 80px;
+    fill: rgb(14, 2, 70);
+  }
+}
+
+
+@keyframes slidein {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes expand {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: var(--out-width);
+    opacity: 1;
+  }
+}
+
+@keyframes bar {
+  from {
+    transform: translateX(-90px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.biryani {
+  font-family: 'Biryani';
+}

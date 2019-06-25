@@ -1,35 +1,57 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'gatsby';
-import styled from 'tachyons-components';
+import styled from 'styled-components';
+// import Logo from './Logo';
 
-const Nav = styled('div')`
-tr fr mt3
-`
+export default function Header() {
 
-const Title = styled('h1')`
-helvetica b f2 pv0 mv0
-`
+    const Nav = styled.div`
+        text-align: right;
+        float: right;
+        display: inline;
+        margin-top: .5rem;
+        font-size: 1.25rem;
+    `
+    
+    const Title = styled.h1`
+        font-family: 'helvetica neue', helvetica;
+        font-weight: bold;
+        font-size: 2.25rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    `
+    
+    const HeaderFrame = styled.section`
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        height: 2rem;
+    `
 
-const HeaderFrame = styled('section')`
-bb mb2 pb5 w-100 h2
-`
-const linkStyle = 'ml3 helvetica b no-underline black'
+    const StyledLink = styled(props => <Link {...props} />)`            
+        margin-left: 1rem;
+        font-family: 'helvetica neue', helvetica;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    `        
+    const activeLinkStyle = {
+        borderBottom: '2px solid',
+    };
 
-const activeLinkStyle = {
-    borderBottom: '2px solid',
-};
-
-export default function Header(props) {
-    return (
+    return (    
         <HeaderFrame>
             <div className="fl">
-                <Title>Revela</Title>
-                {/* <Title>{props.title}</Title> */}
+                <Title>
+                    Revela
+                </Title>
             </div>
             <Nav>
-                <Link className={linkStyle} activeStyle={activeLinkStyle} to="/">Home</Link>
-                <Link className={linkStyle} activeStyle={activeLinkStyle} to="/about">About</Link>
-                <Link className={linkStyle} activeStyle={activeLinkStyle} to="/contact">Contact</Link>
+                <StyledLink activeStyle={activeLinkStyle} to="/">Home</StyledLink>
+                <StyledLink activeStyle={activeLinkStyle} to="/about">About</StyledLink>
+                <StyledLink activeStyle={activeLinkStyle} to="/contact">Contact</StyledLink>
             </Nav>
         </HeaderFrame>
     )
