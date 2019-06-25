@@ -3,22 +3,26 @@ import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 
 export default function About(props) {
-    const { publicURL } = "/static/about.html";
+    const { data } = props;
+    const { markdownRemark } = data;
     return (
         <Layout location={props.location} title='About'>
-            <div dangerouslySetInnerHTML={{ __html: publicURL}} />        
+            <div 
+                className='f4'
+                dangerouslySetInnerHTML={{__html : markdownRemark.html }} 
+            />
         </Layout>
     )
 }
 
 export const query = graphql`
 query {
-    allFile(filter: {sourceInstanceName: {eq: "pages"}}) {
-        edges {
-            node {
-                publicURL
+    markdownRemark(frontmatter: {
+            title: {
+                eq: "about"
             }
-        }
+        }) {
+        html
     }
 }
 `

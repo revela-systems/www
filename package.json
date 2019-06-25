@@ -21,6 +21,7 @@
     "tachyons-components": "^1.0.1"
   },
   "devDependencies": {
+    "gatsby-transformer-remark": "^2.5.0",
     "prettier": "^1.18.0"
   },
   "repository": {

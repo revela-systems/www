@@ -5,7 +5,8 @@ module.exports = {
       options: {
         name: `pages`,
         path: `${__dirname}/static/content/`,
-      }
-    }
+      },
+    },
+    `gatsby-transformer-remark`,
   ]
 }
