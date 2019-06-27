@@ -9,14 +9,14 @@ export default function Header() {
         text-align: right;
         float: right;
         display: inline;
-        margin-top: .5rem;
+        margin-top: 1.1rem;
         font-size: 1.25rem;
     `
     
     const Title = styled.h1`
         font-family: 'helvetica neue', helvetica;
         font-weight: bold;
-        font-size: 2.25rem;
+        font-size: 2.5rem;
         padding-top: 0;
         padding-bottom: 0;
         margin-top: 0;
@@ -24,10 +24,11 @@ export default function Header() {
     `
     
     const HeaderFrame = styled.section`
-        margin-top: 0;
+        margin-top: 1rem;
         margin-bottom: 0;
         width: 100%;
-        height: 2rem;
+        height: 3rem;
+        border-bottom: 2px solid;
     `
 
     const StyledLink = styled(props => <Link {...props} />)`            
@@ -38,7 +39,8 @@ export default function Header() {
         color: black;
     `        
     const activeLinkStyle = {
-        borderBottom: '2px solid',
+        // borderBottom: '2px solid',
+        color: 'grey',
     };
 
     return (    

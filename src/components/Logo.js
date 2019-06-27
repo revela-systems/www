@@ -55,7 +55,7 @@ export default function Logo() {
     )
 
     return (
-        <div className="h3">
+        <div>
             {RevelaLogo} 
         </div>
     )

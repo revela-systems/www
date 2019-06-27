@@ -8,6 +8,11 @@ const BodyFrame = styled.div`
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.25rem;
+    p {
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+        margin-block-start: 0rem;
+    }
 `
 const BigFrame = styled.div`
     max-width: 64rem;

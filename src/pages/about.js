@@ -5,11 +5,10 @@ import { graphql } from 'gatsby';
 export default function About(props) {
     const { data } = props;
     const { markdownRemark } = data;
+    
     return (
         <Layout location={props.location} title='About'>
-            <div 
-                dangerouslySetInnerHTML={{__html : markdownRemark.html }} 
-            />
+            <div dangerouslySetInnerHTML={{__html : markdownRemark.html }} />
         </Layout>
     )
 }
