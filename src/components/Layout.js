@@ -9,9 +9,10 @@ const BodyFrame = styled.div`
     margin-bottom: 1rem;
     font-size: 1.25rem;
     p {
-        margin-bottom: .5rem;
+        margin-bottom: .75rem;
         margin-top: .5rem;
-        margin-block-start: 0rem;
+        margin-block-start: .25rem;
+        line-height: 1.25;
     }
 `
 const BigFrame = styled.div`

@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 // import Logo from './Logo';
 
-export default function Header() {
+export default function Header(props) {
 
     const Nav = styled.div`
         text-align: right;
@@ -47,7 +47,7 @@ export default function Header() {
         <HeaderFrame>
             <div className="fl">
                 <Title>
-                    Revela
+                    {props.title}
                 </Title>
             </div>
             <Nav>
