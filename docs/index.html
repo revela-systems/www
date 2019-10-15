@@ -1,22 +1,372 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Revela.io -- Under Construction</title>
+    <title>Revela: Start with data quality</title>
+    <meta name="description"
+        content="Create scalable, high-performance, instrumented data pipelines to help your data scientists do what they do best - analyze your data." />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#201847">
 
+    <noscript>
+        <style>
+            .loading-no-js {
+                display: initial !important;
+            }
+
+            .team-no-js {
+                display: none !important;
+            }
+        </style>
+    </noscript>
+
+    <script src="https://kit.fontawesome.com/d9ef88a416.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <main>
-        <div>
-            <header>Revela.io</header>
-            <span id="construction">We hope you are enjoying this minimalistic experience.</span>
-        </div>
-    </main>
+    <main class="page-layout-grid">
+        <div id="splash" class="splash">
+            <div class="logo">
+                <svg viewBox="0 0 350 150">
+                    <defs>
+                        <linearGradient id="out-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:rgb(0, 171, 227);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:rgb(249, 238, 7);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
 
-    <script src="js/revela.min.js"></script>
+                    <circle class="cx10" cx=10 cy=30 r=4></circle>
+
+                    <circle class="cx20" cx=20 cy=50 r=4></circle>
+
+                    <circle class="cx30" cx=30 cy=10 r=4></circle>
+
+                    <circle class="cx40" cx=40 cy=20 r=4></circle>
+                    <circle class="cx50" cx=40 cy=40 r=4></circle>
+
+                    <circle class="cx50" cx=50 cy=30 r=4></circle>
+                    <circle class="cx50" cx=50 cy=50 r=4></circle>
+
+                    <circle class="cx60" cx=60 cy=20 r=4></circle>
+                    <circle class="cx60" cx=60 cy=30 r=4></circle>
+                    <circle class="cx60" cx=60 cy=50 r=4></circle>
+
+                    <circle class="cx70" cx=70 cy=10 r=4></circle>
+                    <circle class="cx70" cx=70 cy=40 r=4></circle>
+                    <circle class="cx70" cx=70 cy=50 r=4></circle>
+
+                    <circle class="cx80" cx=80 cy=10 r=4></circle>
+                    <circle class="cx80" cx=80 cy=30 r=4></circle>
+                    <circle class="cx80" cx=80 cy=40 r=4></circle>
+                    <circle class="cx80" cx=80 cy=50 r=4></circle>
+
+                    <circle class="cx90" cx=90 cy=10 r=4></circle>
+                    <circle class="cx90" cx=90 cy=20 r=4></circle>
+                    <circle class="cx90" cx=90 cy=30 r=4></circle>
+                    <circle class="cx90" cx=90 cy=40 r=4></circle>
+                    <circle class="cx90" cx=90 cy=50 r=4></circle>
+
+                    <rect class="seperator" x=100 y=0 width=2 height=60 rx=1></rect>
+
+                    <rect class="bars bars1" x=108 y=06 width=90 height=8 rx=4></rect>
+                    <rect class="bars bars2" x=108 y=26 width=83 height=8 rx=4></rect>
+                    <rect class="bars bars3" x=108 y=46 width=76 height=8 rx=4></rect>
+
+                    <text x=0 y=140>REVELA</text>
+                </svg>
+
+            </div>
+            <div class="splash-text">
+                Start with data quality.
+            </div>
+            <a class="contact-link button" href="#contact">Contact Us</a>
+            <svg class="contours"></svg>
+        </div>
+        <section id="about" class="about loading loading-no-js">
+            <div class="limiter">
+                <h2 class="about-header">
+                    Don't waste your AI investment
+                </h2>
+                <p class="centered">
+                    Your data experts know that powerful insights depend on the consistent quality of input data.  Avoid
+                    common pitfalls by monitoring your data to detect any bias or anomalies that could skew critical results.
+                </p>
+                <p class="centered">
+                    Help your expensive data science domain experts quickly get to the stage where their expertise is
+                    necessary &mdash;
+                    analyzing and reporting on your data.
+                </p>
+                <hr />
+
+                <div class="about-subsection">
+                    <h2>Prototype with the right data</h2>
+                    <p class="right">
+                        Routine data prep is 79% of data science.  Leverage your data science team by providing only quality data.
+                    </p>
+                    <div class="img-placeholder left">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                </div>
+
+                <div class="about-subsection">
+                    <h2>Take AI Models to Production</h2>
+                    <p class="left">
+                        Your AI problem is time sensitive, get faster results with better data.  Act on valid insights that address your needs in real time.
+                    </p>
+                    <div class="img-placeholder right">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+
+                <div class="about-subsection">
+                    <h2>Tools that scale with your data</h2>
+                    <p class="left">Scalable, high-performance, instrumented data pipelines monitor essential data
+                        streams and detect crucial anomalies.  Efficient reuse minimizes cost while maximizing speed.
+                    </p>
+                    <div class="img-placeholder right">
+                        <i class="fas fa-server"></i>
+                    </div>
+                </div>
+
+                <hr />
+
+                <h1 id="team-photo-title" class="team-no-js">The Team</h1>
+                <p style="text-align: center">
+                    We are a multidisciplinary team recruited by a Canada Research Chair and backed by a world class venture capitalist.
+                </p>
+                <div class="team-section team-no-js">
+                    <div class="team_photos" id="team-images" role="radiogroup" aria-labelledby="team-photo-title">
+                    </div>
+                    <div class="separator"></div>
+                    <div class="bio">
+                        <h3 class="employee-name"></h3>
+                        <h4 class="employee-title"></h4>
+                        <p class="employee-bio"></p>
+                    </div>
+                </div>
+                <hr class="team-no-js" />
+
+                <h1>Advisors</h1>
+                <div class="advisor-section">
+                    <div class="advisor-card">
+                        <div class="advisor-header">
+                            <img class="advisor-photo" alt="Photo of Owen Matthews"
+                                src="./images/advisor_photos/owen-matthews.jpg">
+                            <div class="separator"></div>
+                            <div class="advisor">
+                                <h3 class="advisor-name">
+                                    Owen Matthews
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="advisor-bio">
+                            <h4 class="advisor-title">
+                                Founder and Chairmain of the Alacrity Foundation Canada
+                            </h4>
+                            <p class="advisor-bio">
+                                Owen is a successful technology entrepreneur and investor. He is a current board member
+                                at
+                                Counterpath, SaaSquatch,
+                                HYAS, Tutela, Pretio, Echosec, Encepta, Quantotech, and Talkative.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advisor-card">
+                        <div class="advisor-header">
+                            <img class="advisor-photo" alt="Photo of Amyn Rajan" src="./images/advisor_photos/amyn.jpg">
+                            <div class="separator"></div>
+                            <div class="advisor">
+                                <h3 class="advisor-name">
+                                    Amyn Rajan
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="advisor-bio">
+                            <h4 class="advisor-title">
+                                CEO, Rajan Holdings Inc.
+                            </h4>
+                            <p class="advisor-bio">
+                                Amyn is a serial entrepreneur with expertise in mobile, BI, OLAP, data access, data
+                                analytics, cloud, and Big Data. He
+                                was previously CEO of two successful startups: Simba Technologies and Orbital
+                                Technologies.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advisor-card">
+                        <div class="advisor-header">
+                            <img class="advisor-photo" alt="Photo of Dr. Thomas Darcie"
+                                src="./images/advisor_photos/tdarcie.jpg">
+                            <div class="separator"></div>
+                            <div class="advisor">
+                                <h3 class="advisor-name">
+                                    Dr. Thomas Darcie
+                                </h3>
+                                <h5 class="advisor-titles">
+                                    BSc (Waterloo), MASc, PhD (Toronto), FIEEE, FOSA, PEng
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="advisor-bio">
+                            <h4 class="advisor-title">
+                                Professor and Canada Research Chair in Optical Systems for Communications, Imaging and
+                                Sensing
+                            </h4>
+                            <p class="advisor-bio">
+                                Electrical and Computer Engineering, with research interests in fiber-optic systems and technology and broadband networks.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advisor-card">
+                        <div class="advisor-header">
+                            <img class="advisor-photo" alt="Photo of Dr. Stephen Neville"
+                                src="./images/advisor_photos/sneville.jpg">
+                            <div class="separator"></div>
+                            <div class="advisor">
+                                <h3 class="advisor-name">
+                                    Dr. Stephen Neville
+                                </h3>
+                                <h5 class="advisor-titles">
+                                    BEng, MASc, PhD (UVic), PEng
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="advisor-bio">
+                            <h4 class="advisor-title">
+                                Associate Professor
+                            </h4>
+                            <p class="advisor-bio">
+                                Electrical and Computer Engineering, with research interests in cyber-security, large-scale information systems, data science and big data.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <h1>With Investment From</h1>
+                <div class="investment-section">
+                    <div class="investment-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 213 52.11">
+                            <title>alacrity-logo</title>
+                            <path class="alacrity-blue"
+                                d="M52.73,19.36s-.44,9-8.45,9H35.61l-3.48,0a13.07,13.07,0,0,0,2.51-5.48,12.91,12.91,0,0,0,.17-3.48H52.73Zm-7.94-7.78a5.93,5.93,0,1,1-5.93-5.93,5.93,5.93,0,0,1,5.93,5.93M33.3,19.36a11.32,11.32,0,0,1-.14,3.2,11.86,11.86,0,0,1-3,5.75c-.15.16-.29.32-.44.47-.89.89-1.34,1.38-1.34,1.38a6.36,6.36,0,0,0-.53.87,3.3,3.3,0,0,0-.42,2,3,3,0,0,0,1,1.55l2.24,2.24h0l0,0c5.87,5.91-.43,12.31-.43,12.31L22,41,22,40.93a12.16,12.16,0,0,1-3.23-5.55c-.05-.2-.1-.41-.14-.61A11.61,11.61,0,0,1,19,29.07a15.18,15.18,0,0,1,1.11-2.57,14.12,14.12,0,0,1,1.82-2.6s.62-.57,1.48-1.49a3.08,3.08,0,0,0,.94-1.48,2.43,2.43,0,0,0,0-1.17,6,6,0,0,0-1-1.93l-2.75-2.75c-5.47-5.47.7-12,.7-12l8.58,8.58.07.08a14.28,14.28,0,0,1,2.07,3.08,13.05,13.05,0,0,1,1.36,4.58m-15.11,7a16.61,16.61,0,0,0-.91,2.24,13,13,0,0,0-.41,6.44c0,.11.05.22.07.33H2.59s.27-9,8.55-9Zm37.37-6.91a2.83,2.83,0,0,0-2.83-3H46.41A8.76,8.76,0,1,0,30.8,8.6L23.22,1a2.84,2.84,0,0,0-2-.83h0a2.84,2.84,0,0,0-2,.89c-2.79,3-6.5,10.12-.64,16l2.6,2.6a4.44,4.44,0,0,1,.35.62l-.15.16c-.78.83-1.35,1.35-1.35,1.36a3.65,3.65,0,0,0-.26.27l0,.05a16.14,16.14,0,0,0-1.08,1.39H11.39C2.66,23.51.12,31.2,0,35.27a2.84,2.84,0,0,0,2.84,2.92H16.72A15.37,15.37,0,0,0,20,42.91L20,43l8.21,8.21a2.84,2.84,0,0,0,2,.83h0a2.83,2.83,0,0,0,2-.85c3-3.07,5.65-9.23,1.76-14.7a2.8,2.8,0,0,0-.53-.78l-.83-.83h0l-2.21-2.22-.12-.13.09-.21a3.22,3.22,0,0,1,.2-.34l.86-.89a2.77,2.77,0,0,0,.65.09l3.51,0h8.67c8.47,0,11.08-7.66,11.28-11.71" />
+                            <path class="alacrity-blue"
+                                d="M77.42,20.74c-4.64-.09-9.06.75-9.06,4,0,2.11,1.65,3.08,3.73,3.08a5.33,5.33,0,0,0,5.11-2.94,3.28,3.28,0,0,0,.21-1.19Zm6.39,5.32a28.38,28.38,0,0,0,.37,5.14H78.27l-.43-2.37h-.16A10.58,10.58,0,0,1,70,31.68c-5.22,0-8.15-3.12-8.15-6.37,0-5.4,5.81-8.13,15.4-8.08v-.35c0-1.41-.69-3.74-5.27-3.74a16,16,0,0,0-7,1.58L63.73,11.2A21.86,21.86,0,0,1,73.1,9.31c8.31,0,10.71,4.35,10.71,9Z" />
+                            <rect class="alacrity-blue" x="88.18" width="6.61" height="31.2" />
+                            <path class="alacrity-blue"
+                                d="M113.06,20.74c-4.64-.09-9.06.75-9.06,4,0,2.11,1.65,3.08,3.73,3.08a5.33,5.33,0,0,0,5.11-2.94,3.23,3.23,0,0,0,.21-1.19Zm6.39,5.32a28.38,28.38,0,0,0,.37,5.14h-5.91l-.43-2.37h-.16a10.58,10.58,0,0,1-7.67,2.86c-5.22,0-8.15-3.12-8.15-6.37,0-5.4,5.81-8.13,15.4-8.08v-.35c0-1.41-.69-3.74-5.27-3.74a16,16,0,0,0-7,1.58L99.37,11.2a21.87,21.87,0,0,1,9.38-1.89c8.31,0,10.71,4.35,10.71,9Z" />
+                            <path class="alacrity-blue"
+                                d="M142.89,30.54a22.29,22.29,0,0,1-7.35,1.14c-8.1,0-13.37-4.31-13.37-10.94,0-6.42,5.33-11.42,14.44-11.42a19.42,19.42,0,0,1,6.34,1l-1.17,4a13.64,13.64,0,0,0-5-.84c-5,0-8,3-7.94,6.94,0,4.39,3.46,6.9,7.94,6.9a15.2,15.2,0,0,0,5.17-.83Z" />
+                            <path class="alacrity-blue"
+                                d="M145.18,16.7c0-2.9-.05-5-.21-6.9h5.7l.21,4.09h.21a7.68,7.68,0,0,1,7.09-4.57,8.26,8.26,0,0,1,1.54.13v5.1a10.93,10.93,0,0,0-1.92-.18c-3.14,0-5.27,1.67-5.86,4.09a7.74,7.74,0,0,0-.21,1.67V31.2h-6.55Z" />
+                            <path class="alacrity-blue"
+                                d="M161.59,9.8h6.61V31.2h-6.61Zm7-6c0,1.63-1.44,2.9-3.73,2.9s-3.62-1.27-3.62-2.9S162.71.88,164.89.88s3.62,1.27,3.68,2.94" />
+                            <path class="alacrity-blue"
+                                d="M180.18,4.31V9.8h6.23v4h-6.23v9.45c0,2.59.85,4,3.36,4A9.67,9.67,0,0,0,186.1,27l.11,4.13a16.91,16.91,0,0,1-4.74.57,8.53,8.53,0,0,1-5.65-1.8c-1.39-1.23-2-3.16-2-6V13.84h-3.73v-4h3.73v-4Z" />
+                            <path class="alacrity-blue"
+                                d="M194.25,9.8l4.69,11.47c.53,1.32,1.07,2.94,1.44,4.17h.16c.43-1.23.91-2.81,1.39-4.22L206,9.8h7l-6.5,14.59c-3.57,8-6,11.56-9.06,13.75a14.55,14.55,0,0,1-6.87,2.77l-1.49-4.57a12.44,12.44,0,0,0,3.84-1.49,10.26,10.26,0,0,0,3.57-3.38,1.92,1.92,0,0,0,.43-1,2,2,0,0,0-.37-1.06L187.06,9.8Z" />
+                            <path class="alacrity-blue"
+                                d="M116.45,49.19a1.19,1.19,0,0,1-.08.43,2,2,0,0,1-1.87,1.07c-.76,0-1.36-.35-1.36-1.12,0-1.19,1.62-1.49,3.31-1.46Zm2.34-2c0-1.7-.88-3.28-3.91-3.28a8,8,0,0,0-3.43.69l.47,1.28a5.87,5.87,0,0,1,2.55-.58c1.67,0,1.93.85,1.93,1.36v.13c-3.51,0-5.63,1-5.63,2.95,0,1.19,1.07,2.32,3,2.32a3.87,3.87,0,0,0,2.81-1h.06l.16.86h2.16a10.22,10.22,0,0,1-.14-1.87Zm-11.43,1.31a1.83,1.83,0,0,1-.08.58,2.06,2.06,0,0,1-2.06,1.39,2.27,2.27,0,0,1-2.38-2.47,2.35,2.35,0,0,1,2.4-2.58,2,2,0,0,1,2.06,1.39,2.3,2.3,0,0,1,.06.51Zm0-8V45h0a3.28,3.28,0,0,0-2.67-1,4,4,0,0,0-4.25,4.16,3.88,3.88,0,0,0,4.05,4,3.62,3.62,0,0,0,3.1-1.41h0l.1,1.23h2.14c0-.53-.08-1.39-.08-2.19V40.56ZM97,49.19a1.19,1.19,0,0,1-.08.43,2,2,0,0,1-1.87,1.07c-.76,0-1.36-.35-1.36-1.12,0-1.19,1.62-1.49,3.31-1.46Zm2.34-2c0-1.7-.88-3.28-3.91-3.28a8,8,0,0,0-3.43.69l.47,1.28A5.87,5.87,0,0,1,95,45.35c1.67,0,1.93.85,1.93,1.36v.13c-3.51,0-5.63,1-5.63,2.95,0,1.19,1.07,2.32,3,2.32a3.87,3.87,0,0,0,2.8-1h.06l.16.86h2.16a10.34,10.34,0,0,1-.14-1.87ZM81.76,51.93h2.42V47.35a1.68,1.68,0,0,1,.1-.64,2,2,0,0,1,1.87-1.15c1.31,0,1.81.85,1.81,2v4.4h2.4V47.31A3.11,3.11,0,0,0,87,44a3.62,3.62,0,0,0-3,1.35H83.9l-.12-1.17h-2.1c.06.67.08,1.43.08,2.32Zm-4-2.74a1.19,1.19,0,0,1-.08.43,2,2,0,0,1-1.87,1.07c-.76,0-1.36-.35-1.36-1.12,0-1.19,1.62-1.49,3.31-1.46Zm2.34-2c0-1.7-.88-3.28-3.91-3.28a8,8,0,0,0-3.43.69l.47,1.28a5.87,5.87,0,0,1,2.55-.58c1.67,0,1.93.85,1.93,1.36v.13c-3.51,0-5.63,1-5.63,2.95,0,1.19,1.07,2.32,3,2.32a3.87,3.87,0,0,0,2.81-1h.06l.16.86h2.16a10.22,10.22,0,0,1-.14-1.87ZM71.5,50.06a8,8,0,0,1-2.61.4c-2.88,0-4.58-1.52-4.58-3.89,0-2.59,1.93-4,4.6-4a7.58,7.58,0,0,1,2.57.42L72,41.44a9,9,0,0,0-3.2-.48c-4,0-7,2.15-7,5.7,0,3.28,2.53,5.45,6.7,5.45a9.79,9.79,0,0,0,3.39-.5Z" />
+                        </svg>
+                    </div>
+                    <div class="investment-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 306.4 612 179.1">
+                            <g>
+                                <polygon points="267.9,372.8 255.6,422 248.2,422 238.2,381.2 228.4,422 221.2,422 208.6,372.8 215.3,372.8
+                        		225.2,413.7 235.1,372.8 241.7,372.8 251.7,414.2 261.5,372.8 	" />
+                                <path class="wc-dark" d="M289.4,422.9c-5.9,0-10.5-1.7-13.8-4.9c-3.3-3.4-4.8-8.1-4.8-14.2c0-6,1.6-10.8,4.7-14.4
+                        		c3.1-3.6,7.2-5.4,12.4-5.4c2.3,0,4.3,0.3,6.1,0.9c1.8,0.6,3.3,1.7,4.6,3.1c1.4,1.4,2.3,3.1,3,5.1c0.7,2,1,4.5,1,7.5v3.4h-25.6
+                        		c0,4.3,1,7.6,3.3,9.9c2.2,2.3,5.1,3.4,8.9,3.4c1.4,0,2.7-0.1,4-0.4c1.4-0.3,2.5-0.7,3.6-1.2c1.2-0.5,2.1-0.9,2.8-1.5
+                        		c0.7-0.5,1.4-0.9,1.9-1.4h0.3v6.8c-0.7,0.3-1.7,0.6-2.7,1c-1,0.4-2.1,0.7-2.9,0.9c-1.3,0.3-2.3,0.6-3.3,0.7
+                        		C292.1,422.8,290.8,422.9,289.4,422.9L289.4,422.9z M296.6,399.5c0-1.7-0.2-3.1-0.6-4.3c-0.3-1.3-0.8-2.2-1.5-3
+                        		c-0.7-0.9-1.7-1.7-2.8-2.1c-1.2-0.5-2.5-0.7-4.2-0.7c-1.7,0-3,0.2-4.2,0.7c-1.2,0.5-2.2,1.2-3.1,2.1c-0.9,0.9-1.7,2.1-2.1,3.3
+                        		c-0.5,1.2-0.8,2.5-0.9,4.1H296.6L296.6,399.5z" />
+                                <path class="wc-dark" d="M319,423c-2.5,0-4.8-0.3-6.9-0.9c-2.1-0.6-3.9-1.4-5.4-2.1V413h0.3c0.5,0.4,1.2,0.8,1.9,1.4
+                        		c0.7,0.5,1.7,1,2.8,1.6c1,0.5,2.2,0.9,3.5,1.3c1.3,0.4,2.6,0.5,4,0.5c0.9,0,2.1-0.1,3.1-0.3c1.2-0.2,2-0.5,2.5-0.9
+                        		c0.7-0.5,1.4-1,1.7-1.6c0.3-0.5,0.5-1.5,0.5-2.6c0-1.5-0.4-2.6-1.3-3.4c-0.8-0.7-2.2-1.4-4.3-1.9c-0.8-0.2-1.8-0.4-3.1-0.7
+                        		c-1.3-0.3-2.4-0.5-3.6-0.8c-2.8-0.8-4.8-2.1-6.2-3.8c-1.3-1.7-1.9-3.8-1.9-6.2c0-3.4,1.3-6.1,3.8-8.1c2.5-2.1,5.9-3.1,10-3.1
+                        		c2.1,0,4.1,0.2,6.2,0.7s3.8,1.2,5.2,1.9v6.7h-0.3c-1.6-1.3-3.4-2.2-5.4-2.9c-1.9-0.7-3.9-1-5.9-1c-2.1,0-3.8,0.4-5.1,1.3
+                        		c-1.4,0.8-2.1,2.2-2.1,3.9c0,1.6,0.4,2.7,1.3,3.5c0.8,0.7,2.2,1.4,4,1.9c0.9,0.2,2,0.5,3,0.7c1.2,0.2,2.3,0.5,3.6,0.8
+                        		c2.7,0.7,4.8,1.8,6.2,3.4c1.4,1.6,2.1,3.8,2.1,6.5c0,1.6-0.3,3.1-0.9,4.5c-0.6,1.4-1.6,2.6-2.7,3.7c-1.4,1.2-2.8,1.9-4.5,2.5
+                        		C323.6,422.7,321.5,423,319,423L319,423z" />
+                                <polygon class="wc-dark" points="345.5,422 339.3,422 339.3,370.6 345.5,370.6 	" />
+                                <path class="wc-dark" d="M370.7,422.9c-5.9,0-10.5-1.7-13.8-4.9c-3.3-3.4-4.8-8.1-4.8-14.2c0-6,1.6-10.8,4.7-14.4
+                        		c3.1-3.6,7.2-5.4,12.4-5.4c2.3,0,4.3,0.3,6.1,0.9c1.8,0.6,3.3,1.7,4.6,3.1c1.4,1.4,2.3,3.1,3,5.1c0.7,2,1,4.5,1,7.5v3.4h-25.6
+                        		c0,4.3,1,7.6,3.3,9.9c2.2,2.3,5.1,3.4,8.9,3.4c1.4,0,2.7-0.1,4-0.4c1.4-0.3,2.5-0.7,3.6-1.2c1.2-0.5,2.1-0.9,2.8-1.5
+                        		s1.4-0.9,1.9-1.4h0.3v6.8c-0.7,0.3-1.7,0.6-2.7,1c-1,0.4-2.1,0.7-2.9,0.9c-1.3,0.3-2.3,0.6-3.3,0.7
+                        		C373.5,422.8,372.2,422.9,370.7,422.9L370.7,422.9z M378,399.5c0-1.7-0.2-3.1-0.6-4.3c-0.3-1.3-0.8-2.2-1.5-3
+                        		c-0.7-0.9-1.7-1.7-2.8-2.1c-1.2-0.5-2.5-0.7-4.2-0.7c-1.7,0-3,0.2-4.2,0.7c-1.2,0.5-2.2,1.2-3.1,2.1c-0.9,0.9-1.7,2.1-2.1,3.3
+                        		c-0.5,1.2-0.8,2.5-0.9,4.1H378L378,399.5z" />
+                                <polygon class="wc-dark" points="419.3,385.1 399.5,435.7 392.9,435.7 399.5,420.3 386.1,385.1 392.8,385.1 402.9,412.5
+                        		412.8,385.1 	" />
+                                <path class="wc-dark" d="M449.9,423c-3.3,0-6.2-0.5-8.9-1.6c-2.7-1-5-2.7-6.9-4.8c-2-2.1-3.5-4.8-4.5-8c-1-3.1-1.6-6.8-1.6-11
+                        		c0-4.1,0.5-7.7,1.6-10.8c1-3,2.6-5.8,4.6-8c2-2.2,4.3-3.9,6.9-5c2.7-1.2,5.7-1.8,9-1.8c1.7,0,3.1,0.1,4.6,0.3
+                        		c1.5,0.2,2.8,0.5,4,0.9c1,0.3,2.1,0.7,3.3,1.3c1.2,0.5,2.2,1,3.3,1.6v7.9h-0.5c-0.5-0.5-1.4-1.2-2.2-1.9c-0.9-0.7-2-1.5-3.3-2.2
+                        		c-1.3-0.7-2.6-1.3-4.1-1.7c-1.5-0.4-3.1-0.6-5.1-0.6c-2.1,0-4.1,0.4-6,1.3c-1.9,0.8-3.5,2.1-4.9,3.8c-1.4,1.7-2.5,3.8-3.3,6.3
+                        		c-0.7,2.5-1.2,5.4-1.2,8.6c0,3.4,0.4,6.3,1.3,8.7c0.8,2.4,1.9,4.5,3.4,6.2c1.4,1.7,2.9,2.8,4.8,3.7c1.9,0.8,3.8,1.3,5.9,1.3
+                        		c1.9,0,3.7-0.2,5.2-0.7c1.6-0.4,3-1,4.3-1.8s2.3-1.4,3.1-2.1c0.8-0.7,1.6-1.4,2.1-1.9h0.5v7.8c-1,0.5-2.1,0.9-3,1.5
+                        		c-0.9,0.4-2.1,0.9-3.5,1.4c-1.5,0.4-2.7,0.8-4,1C453.5,422.8,451.9,423,449.9,423L449.9,423z" />
+                                <polygon class="wc-dark" points="477.2,422 471,422 471,370.6 477.2,370.6 	" />
+                                <path class="wc-dark"
+                                    d="M516.7,403.6c0,6.2-1.5,11-4.5,14.4c-3,3.4-7,5-12,5c-5.1,0-9.1-1.8-12.2-5.2c-2.9-3.5-4.4-8.3-4.4-14.3
+                        		c0-6.2,1.5-10.9,4.5-14.4c3-3.5,7-5.1,12-5.1s8.9,1.7,12,5.1C515.2,392.6,516.7,397.4,516.7,403.6L516.7,403.6z M510.3,403.6
+                        		c0-4.8-0.8-8.3-2.6-10.6c-1.8-2.3-4.2-3.5-7.5-3.5s-5.8,1.2-7.6,3.5c-1.8,2.3-2.6,5.9-2.6,10.6c0,4.6,0.8,8.2,2.6,10.5
+                        		c1.8,2.4,4.3,3.6,7.6,3.6c3.1,0,5.7-1.2,7.5-3.5C509.4,411.9,510.3,408.3,510.3,403.6L510.3,403.6z" />
+                                <polygon class="wc-dark"
+                                    points="552.2,385.1 538.2,422 532.6,422 518.8,385.1 525.5,385.1 535.7,413.6 545.6,385.1 	" />
+                                <path class="wc-dark"
+                                    d="M572.8,422.9c-5.9,0-10.5-1.7-13.8-4.9c-3.3-3.4-4.8-8.1-4.8-14.2c0-6,1.6-10.8,4.7-14.4s7.2-5.4,12.4-5.4
+                        		c2.3,0,4.3,0.3,6.1,0.9c1.8,0.6,3.3,1.7,4.6,3.1c1.4,1.4,2.3,3.1,3,5.1c0.7,2,1,4.5,1,7.5v3.4h-25.6c0,4.3,1,7.6,3.3,9.9
+                        		c2.2,2.3,5.1,3.4,8.9,3.4c1.4,0,2.7-0.1,4-0.4c1.4-0.3,2.5-0.7,3.6-1.2c1.2-0.5,2.1-0.9,2.8-1.5c0.7-0.5,1.4-0.9,1.9-1.4h0.3v6.8
+                        		c-0.7,0.3-1.7,0.6-2.7,1c-1,0.4-2.1,0.7-2.9,0.9c-1.3,0.3-2.3,0.6-3.4,0.7C575.6,422.8,574.3,422.9,572.8,422.9L572.8,422.9z
+                        		 M580.2,399.5c0-1.7-0.2-3.1-0.6-4.3c-0.3-1.3-0.8-2.2-1.5-3c-0.7-0.9-1.7-1.7-2.8-2.1c-1.2-0.5-2.5-0.7-4.2-0.7s-3,0.2-4.2,0.7
+                        		c-1.2,0.5-2.2,1.2-3.1,2.1c-0.9,0.9-1.7,2.1-2.1,3.3c-0.5,1.2-0.8,2.5-0.9,4.1H580.2L580.2,399.5z" />
+                                <path class="wc-dark"
+                                    d="M612,391.8h-0.3c-0.4-0.1-0.9-0.2-1.5-0.2s-1.2-0.1-1.9-0.1c-1.7,0-3.4,0.3-5,1c-1.7,0.7-3.3,1.8-4.7,3.3
+                        		V422h-6.2v-37h6.2v5.5c2.3-2,4.2-3.5,5.9-4.2c1.7-0.8,3.4-1.3,4.9-1.3c0.6,0,1.2,0,1.5,0.1c0.3,0,0.7,0.1,1,0.1v6.5H612z" />
+                                <path class="wc-dark"
+                                    d="M94,306.4l27.9,41.9c-40.5-2.1-59.5,27.9-47.4,55.5C45.7,381.7,45.3,327.2,94,306.4L94,306.4z" />
+                                <path class="wc-red"
+                                    d="M0,391.6l41.9-27.9c-2,40.5,27.9,59.6,55.5,47.4C75.3,439.9,20.8,440.3,0,391.6L0,391.6z" />
+                                <path class="wc-dark"
+                                    d="M85.1,485.6l-27.9-41.9c40.5,2,59.6-27.9,47.4-55.5C133.4,410.3,133.9,464.8,85.1,485.6L85.1,485.6z" />
+                                <path class="wc-red"
+                                    d="M179.1,400.4l-41.9,27.9c2-40.5-27.9-59.6-55.5-47.4C103.8,352.1,158.3,351.7,179.1,400.4L179.1,400.4z" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+        </section>
+        <section id="contact" class="contact loading loading-no-js">
+            <div class="limiter">
+                <hr />
+                <h1>Contact Us</h1>
+                <p>Want to know more about us? <br>Email us at info@revela.io, or call 1-778-817-1011.<br><br>We will
+                    get
+                    back to you as soon as possible.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info limiter">
+            <h3>
+                Revela Systems, Inc.
+            </h3>
+            <p class="primary-contact">
+                <span class="email">info@revela.io</span><br>
+                1-778-817-1011
+            </p>
+            <p class="address">
+                838 Fort Street<br>
+                Victoria, BC <span>V8W 1H8</span>
+            </p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/bundle.js"></script>
 </body>
 
 </html>

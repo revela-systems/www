@@ -1,0 +1,87 @@
+/*
+  VARIABLES
+*/
+.logo {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; }
+  @media screen and (max-width: 768px) {
+    .logo {
+      grid-row: 2 / span 2;
+      grid-column: 2 / span 3; } }
+  .logo svg {
+    width: 100%;
+    max-height: 30vh;
+    fill: #2daae2; }
+    .logo svg circle {
+      animation-duration: 1s;
+      animation-name: logo-dots;
+      animation-fill-mode: forwards;
+      opacity: 0; }
+      .logo svg circle.cx10 {
+        animation-delay: 00ms; }
+      .logo svg circle.cx20 {
+        animation-delay: 100ms; }
+      .logo svg circle.cx30 {
+        animation-delay: 200ms; }
+      .logo svg circle.cx40 {
+        animation-delay: 300ms; }
+      .logo svg circle.cx50 {
+        animation-delay: 400ms; }
+      .logo svg circle.cx60 {
+        animation-delay: 500ms; }
+      .logo svg circle.cx70 {
+        animation-delay: 600ms; }
+      .logo svg circle.cx80 {
+        animation-delay: 700ms; }
+      .logo svg circle.cx90 {
+        animation-delay: 800ms; }
+    .logo svg .seperator {
+      fill: #ececec;
+      animation: logo-separator 1.5s ease-out forwards; }
+    .logo svg .bars {
+      fill: url(#out-gradient);
+      animation-delay: 1.7s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+      animation-name: logo-bars;
+      opacity: 0; }
+      .logo svg .bars1 {
+        --out-width: 90px; }
+      .logo svg .bars2 {
+        --out-width: 83px; }
+      .logo svg .bars3 {
+        --out-width: 76px; }
+    .logo svg text {
+      font-family: "Biryani";
+      font-size: 80px;
+      fill: #ececec; }
+
+@keyframes logo-dots {
+  from {
+    transform: translateX(-30px);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes logo-bars {
+  from {
+    width: 0;
+    opacity: 0; }
+  to {
+    width: var(--out-width);
+    opacity: 1; } }
+
+@keyframes logo-separator {
+  from {
+    transform: translateX(-90px);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
