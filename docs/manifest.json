@@ -1,0 +1,9 @@
+{
+    "name": "Revela",
+    "short_name": "Revela",
+    "description": "",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#201847",
+    "background_color": "#201847"
+  }

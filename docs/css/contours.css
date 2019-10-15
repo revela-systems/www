@@ -1,0 +1,32 @@
+/*
+  VARIABLES
+*/
+.contours {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40h; }
+  .contours path {
+    animation: contour-appear 500ms forwards ease-in-out;
+    opacity: 0; }
+    .contours path.contour-level-9 {
+      animation: contour-appear 500ms forwards linear;
+      fill: #ececec; }
+    .contours path.contour-level-7 {
+      fill: #8dcbe7;
+      animation-delay: 500ms; }
+    .contours path.contour-level-5 {
+      fill: #53b7e4;
+      animation-delay: 600ms; }
+    .contours path.contour-level-3 {
+      fill: #276195;
+      animation-delay: 700ms; }
+    .contours path.contour-level-1 {
+      fill: #222e5e;
+      animation-delay: 800ms; }
+
+@keyframes contour-appear {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }

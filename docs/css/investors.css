@@ -1,0 +1,25 @@
+/*
+  VARIABLES
+*/
+.investment-section {
+  display: grid;
+  grid-template: 1fr /  1fr 1fr;
+  grid-gap: calc(2 * 1em);
+  justify-content: center;
+  align-items: center; }
+  @media screen and (max-width: 768px) {
+    .investment-section {
+      grid-template: 1fr 1fr / 1fr;
+      padding-top: calc(3.25 * 1em); } }
+
+.investment-card svg {
+  height: 75px; }
+
+.investment-card .alacrity-blue {
+  fill: #16152B; }
+
+.investment-card .wc-dark {
+  fill: #231F20; }
+
+.investment-card .wc-red {
+  fill: #E13A3E; }
