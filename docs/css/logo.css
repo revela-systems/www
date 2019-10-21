@@ -59,6 +59,7 @@
         --out-width: 76px; }
     .logo svg text {
       font-family: "Biryani";
+      font-weight: 900;
       font-size: 80px;
       fill: #ececec; }
 
