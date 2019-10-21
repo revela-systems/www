@@ -4,18 +4,18 @@
 .advisor-section {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
-  grid-gap: calc(2 * 1em);
+  grid-gap: calc(3.25 * 1em);
   text-align: left; }
   @media screen and (max-width: 768px) {
     .advisor-section {
-      grid-template: repeat(4, 1fr)/1fr;
-      grid-gap: calc(3.25 * 1em); } }
+      grid-template: repeat(4, min-content)/1fr; } }
   .advisor-section h3 {
-    margin: 0; }
+    margin: 0;
+    font-size: calc(1rem * 2); }
   .advisor-section h4 {
-    font-size: 1rem; }
+    font-size: calc(1rem * 1.5); }
   .advisor-section p {
-    font-size: 1rem; }
+    font-size: calc(1rem * 1.5); }
 
 .advisor-header {
   display: grid;

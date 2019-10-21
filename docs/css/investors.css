@@ -6,14 +6,19 @@
   grid-template: 1fr /  1fr 1fr;
   grid-gap: calc(2 * 1em);
   justify-content: center;
-  align-items: center; }
-  @media screen and (max-width: 768px) {
+  align-items: center;
+  padding-bottom: calc(5.25 * 1em); }
+  @media screen and (max-width: 425px) {
     .investment-section {
       grid-template: 1fr 1fr / 1fr;
-      padding-top: calc(3.25 * 1em); } }
+      padding-top: calc(1.25 * 1em); } }
 
 .investment-card svg {
   height: 75px; }
+  @media screen and (max-width: 425px) {
+    .investment-card svg {
+      width: 80%;
+      height: auto; } }
 
 .investment-card .alacrity-blue {
   fill: #16152B; }

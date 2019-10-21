@@ -4,7 +4,16 @@
 .contact {
   grid-area: contact;
   text-align: center;
-  padding-bottom: calc(3.25 * 1em); }
+  padding-bottom: calc(3.25 * 1em);
+  background-color: #8dcbe7; }
+  .contact h1 {
+    margin-bottom: calc(1.25 * 1em); }
+  .contact span {
+    color: #276195; }
+  @media screen and (max-width: 768px) {
+    .contact {
+      padding-bottom: calc(2 * 1em);
+      padding-top: calc(2 * 1em); } }
 
 .contact-info {
   display: flex;
@@ -15,11 +24,19 @@
     text-align: center;
     flex-basis: 100%;
     color: #ececec; }
+    @media screen and (max-width: 425px) {
+      .contact-info h3 {
+        margin-top: 0;
+        margin-bottom: calc(0.75 * 1em); } }
   .contact-info p {
     padding-left: calc(2 * 1em);
     padding-right: calc(2 * 1em);
     margin: 0;
     text-align: center;
     font-size: 1rem; }
+    @media screen and (max-width: 425px) {
+      .contact-info p {
+        padding-left: calc(1.25 * 1em);
+        padding-right: calc(1.25 * 1em); } }
   .contact-info .address span {
     padding-left: calc(0.5 * 1em); }
